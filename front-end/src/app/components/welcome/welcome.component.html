@@ -1,0 +1,35 @@
+<main class="welcome-cmp">
+    <div class="container">
+        <form id="start-form" class="form-signin card" novalidate>
+            <div class="card-body">
+                <div class="form-label-group mb-3">
+                    <label for="nickname">Nom de joueur</label>
+                    <input id="nickname" autofocus class="form-control" type="text" name="name" required
+                        placeholder="Entrez un surnom" pattern="[A-Za-z0-9]{3,20}" aria-describedby="nicknameHelp">
+                    <small id="nicknameHelp" class="form-text text-muted"> Entrez un nom de joueur entre 3 et 20 caractères
+                    </small>
+
+                    <div class="invalid-feedback">
+                        <p>Le nom du joueur doit être en caractère alphanumérique et entre 3 et 20 caractères.</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+
+                    <label for="size">Taille du jeu</label>
+                    <input id="size" class="form-control" required type="number" min="1" max="10" name="size"
+                        placeholder="Entrez une taille" aria-describedby="sizeHelp">
+                    <small id="sizeHelp" class="form-text text-muted">Avec combien de paires voulez-vous jouer ?
+                    </small>
+
+                    <div class="invalid-feedback">
+                        <p>Le nombre doit être entre 1 et 10.</p>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <input class="btn btn-outline-primary" type="submit" value="Jouer">
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
